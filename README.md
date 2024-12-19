@@ -4,7 +4,7 @@
 
 This is a [UwU](https://esolangs.org/wiki/UwU) to [brainfuck](https://esolangs.org/wiki/Brainfuck), and brainfuck to UwU transpiler. 
 
-## BF
+## brainfuck
 
 brainfuck is a esoteric programming language (or esolang). It operates on an array of memory cells, with each initially set to 0. A pointer initially points to the first memory cell, and moves and increments the cells according to the commands given. 
 
