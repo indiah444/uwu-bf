@@ -25,4 +25,6 @@ def transpile_uwu_to_brainfuck(uwu_string: str) -> str:
     return brainfuck_code
 
 
-print(transpile_uwu_to_brainfuck("UwU UwU UwU UwU ~w~ OwO UwU UwU UwU UwU ~w~ OwO UwU UwU UwU UwU UwU OwO UwU UwU UwU UwU OwO UwU UwU UwU UwU OwO UwU UwU °w° °w° °w° °w° QwQ ¯w¯ °w° QwQ ¯w¯ OwO UwU UwU UwU UwU OwO UwU UwU UwU UwU @w@ OwO °w° °w° ~w~ OwO OwO UwU UwU °w° °w° QwQ ¯w¯ OwO OwO @w@ OwO UwU @w@ °w° °w° °w° UwU UwU UwU ~w~ OwO QwQ QwQ °w° QwQ ¯w¯ OwO @w@ OwO UwU UwU UwU @w@ OwO OwO @w@ °w° °w° °w° °w° UwU UwU UwU UwU UwU ~w~ OwO UwU UwU °w° QwQ ¯w¯ OwO UwU @w@ OwO UwU UwU UwU UwU @w@ °w° QwQ QwQ QwQ QwQ @w@ OwO OwO OwO UwU @w@"))
+if __name__ == "__main__":
+
+    print(transpile_uwu_to_brainfuck("UwU UwU UwU UwU ~w~ OwO UwU UwU UwU UwU ~w~ OwO UwU UwU UwU UwU UwU OwO UwU UwU UwU UwU OwO UwU UwU UwU UwU OwO UwU UwU °w° °w° °w° °w° QwQ ¯w¯ °w° QwQ ¯w¯ OwO UwU UwU UwU UwU OwO UwU UwU UwU UwU @w@ OwO °w° °w° ~w~ OwO OwO UwU UwU °w° °w° QwQ ¯w¯ OwO OwO @w@ OwO UwU @w@ °w° °w° °w° UwU UwU UwU ~w~ OwO QwQ QwQ °w° QwQ ¯w¯ OwO @w@ OwO UwU UwU UwU @w@ OwO OwO @w@ °w° °w° °w° °w° UwU UwU UwU UwU UwU ~w~ OwO UwU UwU °w° QwQ ¯w¯ OwO UwU @w@ OwO UwU UwU UwU UwU @w@ °w° QwQ QwQ QwQ QwQ @w@ OwO OwO OwO UwU @w@"))
