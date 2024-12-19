@@ -2,8 +2,8 @@
 
 from argparse import ArgumentParser
 
-from uwu_to_brainfuck import transpile_uwu_to_brainfuck
-from brainfuck_to_uwu import transpile_brainfuck_to_uwu
+from uwu_to_bf import transpile_uwu_to_brainfuck
+from bf_to_uwu import transpile_brainfuck_to_uwu
 
 
 def get_console_arguments() -> str:
