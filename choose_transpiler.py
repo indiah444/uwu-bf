@@ -17,21 +17,21 @@ def get_console_arguments() -> str:
                         required=True, help="Input language (brainfuck or UwU).")
     parser.add_argument("--output-lang", choices=[
                         "brainfuck", "uwu"], required=True, help="Output language (brainfuck or UwU).")
-    args = parser.parse_args()
+    arguments = parser.parse_args()
 
-    return args
+    return arguments
 
 
-def transpile(input_text: str, input_lang: str, output_lang: str) -> str:
+def transpile(input_txt: str, input_lang: str, output_lang: str) -> str:
     """Transpule the input text from the input language to the output language."""
 
     if input_lang == "uwu" and output_lang == "brainfuck":
-        return transpile_uwu_to_brainfuck(input_text)
-    elif input_lang == "brainfuck" and output_lang == "uwu":
-        return transpile_brainfuck_to_uwu
-    else:
-        raise ValueError(f"Unsupported language conversion: {
-                         input_lang} to {output_lang}")
+        return transpile_uwu_to_brainfuck(input_txt)
+    if input_lang == "brainfuck" and output_lang == "uwu":
+        return transpile_brainfuck_to_uwu(input_txt)
+
+    raise ValueError(
+        f"Unsupported language conversion: {input_lang} to {output_lang}")
 
 
 if __name__ == "__main__":
@@ -39,7 +39,7 @@ if __name__ == "__main__":
     args = get_console_arguments()
 
     try:
-        with open(args.input_file, "r") as f:
+        with open(args.input_file, "r", encoding="utf-8") as f:
             input_text = f.read().strip()
     except FileNotFoundError:
         print(f"Error: Input file '{args.input_file} not found.")
